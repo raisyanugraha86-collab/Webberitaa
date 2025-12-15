@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuknya iPhone 16 ke Indonesia</title>
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="bootstrap.bundle.min.js" defer></script>
+
+  <style>
+    .populer-box{
+      background:#0dcaf0;
+      padding:15px;
+      border-radius:10px;
+    }
+    .populer-title{
+      color:#fff;
+      font-weight:bold;
+      text-align:center;
+      margin-bottom:15px;
+    }
+    .populer-item{
+      background:#fff;
+      padding:12px;
+      border-radius:10px;
+      margin-bottom:10px;
+    }
+    .populer-item a{
+      text-decoration:none;
+      color:#000;
+      display:block;
+      font-size:14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">News</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Olahraga</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Memasak</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Ekonomi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Otomotif</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Teknologi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BARIS BERJALAN -->
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-8 bg-danger text-light py-2">
+      <marquee>iPhone 16 resmi masuk pasar Indonesia</marquee>
+    </div>
+    <div class="col-sm-4 bg-success text-light text-center py-2" id="waktu"></div>
+  </div>
+</div>
+
+<!-- KONTEN -->
+<div class="container mt-3">
+  <div class="row">
+
+    <!-- BERITA -->
+    <div class="col-sm-8 py-3">
+      <h3>Masuknya iPhone 16 ke Indonesia</h3>
+      <small>Senin, 20 Oktober 2025, 14:00 oleh: admin</small>
+
+      <img src="images/iphone.jpg" class="img-thumbnail w-100 my-3">
+
+      <p>
+        Peluncuran iPhone 16 menandai langkah besar bagi Apple dalam menghadirkan
+        teknologi yang semakin matang ke segmen flagship standar.
+      </p>
+
+      <p>
+        Dibekali chip Apple A18, iPhone 16 menawarkan peningkatan performa signifikan
+        dengan Neural Engine yang lebih cepat untuk mendukung model AI generatif.
+      </p>
+
+      <p>
+        Dari sisi kamera, iPhone 16 mengusung sensor utama 48 MP serta kamera
+        ultra-wide dengan autofokus, fitur yang sebelumnya hanya tersedia di seri Pro.
+      </p>
+
+      <p>
+        Meski masih menggunakan refresh rate 60 Hz, iPhone 16 tetap menjadi pilihan
+        menarik bagi pengguna mainstream yang menginginkan performa tinggi dan
+        ekosistem Apple yang matang.
+      </p>
+
+      <strong>Dibaca: 5000x</strong><br>
+      <a href="test.html">← Kembali ke halaman utama</a>
+    </div>
+
+    <!-- POPULER -->
+    <div class="col-sm-4 mt-3 mt-sm-0">
+      <div class="populer-box">
+        <div class="populer-title">BERITA POPULER</div>
+
+        <div class="populer-item"><a href="roti.html">Cara membuat roti simple</a></div>
+        <div class="populer-item"><a href="dollar.html">Dolar AS melemah</a></div>
+        <div class="populer-item"><a href="maxwdc.html">Max Verstappen juara dunia</a></div>
+        <div class="populer-item"><a href="porsche.html">Porsche GT3 RS terbaru</a></div>
+        <div class="populer-item"><a href="#">Teknologi AI Apple</a></div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light text-center p-3 mt-5">
+  Copyright © 2025 By RPL3
+  <div class="container">
+    <hr>
+    <a href="#" class="btn btn-primary m-2">Tiktok</a>
+    <a href="#" class="btn btn-primary m-2">Instagram</a>
+    <a href="#" class="btn btn-primary m-2">Twitter</a>
+  </div>
+</footer>
+
+<!-- SCRIPT WAKTU -->
+<script>
+function updateWaktu(){
+  const hari=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+  const bulan=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+  const now=new Date();
+  document.getElementById('waktu').innerHTML =
+    hari[now.getDay()]+', '+now.getDate()+' '+bulan[now.getMonth()]+' '+now.getFullYear()+
+    ' '+now.toLocaleTimeString('id-ID');
+}
+setInterval(updateWaktu,1000);
+updateWaktu();
+</script>
+
+</body>
+</html>
